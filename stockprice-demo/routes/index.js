@@ -5,10 +5,8 @@ const getTickerData = require('../stockprice');
 const indexRouter = express.Router();
 
 indexRouter.post('/webhook', (req, res) => {
-
   const agent = new WebhookClient({ request: req, response: res });
-
-  let intentMap = new Map();
+  const intentMap = new Map();
 
   async function stockprice() {
     const company = req.body.queryResult.parameters.company;
