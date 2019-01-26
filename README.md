@@ -10,3 +10,7 @@
 
 [NodeLink]: https://nodejs.org/en/
 [NgrokLink]: https://ngrok.com/download
+
+3. Other useful links:
+https://console.dialogflow.com/api-client/
+https://console.actions.google.com/

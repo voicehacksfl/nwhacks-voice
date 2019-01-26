@@ -19,6 +19,6 @@ npm start
 ```
 7. In the directory that you installed ngrok, run the command to expose your local server:
 ```sh
-./ngrok http 8080
+./ngrok http -bind-tls=true 8080
 ```
 8. ngrok will return a public URL that you can specify in your dialogflow console under fulfillment. Make sure to append '/webhook' to the end of the url in order to have dialogflow send webhooks to your API endpoint.
