@@ -21,4 +21,10 @@ npm start
 ```sh
 ./ngrok http -bind-tls=true 8080
 ```
-8. ngrok will return a public URL that you can specify in your dialogflow console under fulfillment. Make sure to append '/webhook' to the end of the url in order to have dialogflow send webhooks to your API endpoint.
+
+## Dialogflow integration
+1. Great an action for google here (nexessary to run the google actions simulator): https://console.actions.google.com/
+2. Go to your dialogflow console here: https://console.dialogflow.com/api-client/
+3. Set up a new dialogflow agent, and in the agent settings, link it to the google actions project you set up in step 1.
+4. Create the necessary intents and entities for your voice app in the dialogflow console.
+5. Link your dialogflow agent to the server you set up above. ngrok will return a public URL that you can specify in your dialogflow console under fulfillment. Make sure to append '/webhook' to the end of the url in order to have dialogflow send webhooks to your API endpoint.
